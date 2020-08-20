@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Slap Game</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="game.css">
 </head>
 
 <body>
@@ -20,20 +21,21 @@
 	<main class="container">
 
 		<section class="row">
-			<div class="col-12 text-center mt-5">
+			<div id="enemy" class="col-12 text-center mt-5">
 				<h3>Health:<span id="health"></span></h3>
-				<h4>Hits:<span id="hits"></span></h4>
 				<img src="//placehold.it/200x200" alt="">
 			</div>
 		</section>
 	</main>
-
+	
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-12 text-center justify-content-around">
+			<h4 class="col-12 text-center">Hits:<span id="hits"></span></h4>
+			<div class="col-12 text-center justify-content-center flex-direction-row d-flex">
 				<div class=""><button class="btn btn-secondary" onclick="attack('slap')">SLAP</button></div>
 				<div class=""><button class="btn btn-secondary" onclick="attack('punch')">PUNCH</button></div>
 				<div class=""><button class="btn btn-secondary" onclick="attack('kick')">KICK</button></div>
+				<div class=""><button id="special" class="btn btn-warning" onclick="timeOut(), attack('special')">SPECIAL</button></div>
 			</div>
 		</div>
 		<div class="row text-center bg-primary">
