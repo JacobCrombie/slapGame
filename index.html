@@ -18,8 +18,11 @@
 	</header>
 
 	<main class="container">
+
 		<section class="row">
 			<div class="col-12 text-center mt-5">
+				<h3>Health:<span id="health"></span></h3>
+				<h4>Hits:<span id="hits"></span></h4>
 				<img src="//placehold.it/200x200" alt="">
 			</div>
 		</section>
@@ -27,7 +30,11 @@
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-12 text-center"><button class="btn btn-secondary" onclick="attack('slap')">SLAP</button></div>
+			<div class="col-12 text-center justify-content-around">
+				<div class=""><button class="btn btn-secondary" onclick="attack('slap')">SLAP</button></div>
+				<div class=""><button class="btn btn-secondary" onclick="attack('punch')">PUNCH</button></div>
+				<div class=""><button class="btn btn-secondary" onclick="attack('kick')">KICK</button></div>
+			</div>
 		</div>
 		<div class="row text-center bg-primary">
 			<h4 class="col-12">Made By: Adam and Jake</h4>
