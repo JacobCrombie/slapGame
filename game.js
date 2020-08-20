@@ -1,3 +1,12 @@
+let health = 100
+
+
+
+
+
+
 function attack(move){
-  console.log("test button")
+  health--
+  console.log("health")
 }
+
