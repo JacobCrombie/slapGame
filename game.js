@@ -111,6 +111,23 @@ function timeOut(){
   }, 3000);
 }
 
+let color = "dark"
+function toggleBgs() {
+  let elems = document.querySelectorAll(`.bg-${color}`)
+  for (let i = 0; i < elems.length; i++) {
+    elems[i].classList.remove(`bg-${color}`)
+    if (color == "dark") {
+      color = "secondary"
+    } else {
+      color = "dark"
+    }
+    elems[i].classList.add(`bg-${color}`)
+  }
+}
+
+setInterval(toggleBgs, 1000);
+
+
 
 drawEnemy()
 drawStats()
